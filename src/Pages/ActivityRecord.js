@@ -44,7 +44,7 @@ const ActivityRecord = () => {
   console.log(editActivityState, "data Get");
   const updateActivityBtn = async () => {
     let idtoUpdate = idget;
-    await fetch(https://gymspark.onrender.com/activityedit/${idtoUpdate}`, {
+    await fetch(`https://gymspark.onrender.com/activityedit/${idtoUpdate}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(editActivityState),
