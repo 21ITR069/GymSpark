@@ -18,7 +18,7 @@ const Login = () => {
     if (loginInputs.email === "" || loginInputs.password === "") {
       alert("please enter data in both fields");
     } else {
-      let record = await fetch("http://127.0.0.1:4000/login", {
+      let record = await fetch("https://gymspark.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(loginInputs),
