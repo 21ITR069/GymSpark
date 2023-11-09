@@ -17,7 +17,7 @@ const ActivityRecord = () => {
     seteditActivityState({ ...editActivityState, [name]: value });
   };
   const dataFetch = async () => {
-    let dataFetch = await fetch(`http://localhost:4000/activityget`);
+    let dataFetch = await fetch(`https://gymspark.onrender.com/activityget`);
     dataFetch = await dataFetch.json();
     setData(dataFetch);
   };
@@ -27,7 +27,7 @@ const ActivityRecord = () => {
 
   const deleteActivity = async (id) => {
     console.log("delete clicked");
-    await fetch(`http://127.0.0.1:4000/activityget/${id}`, {
+    await fetch(`https://gymspark.onrender.com/activityget/${id}`, {
       method: "DELETE",
     });
     dataFetch();
@@ -35,7 +35,7 @@ const ActivityRecord = () => {
 
   const editActivity = async (id) => {
     console.log("edit clicked");
-    let dataGet = await fetch(`http://127.0.0.1:4000/activityget/${id}`);
+    let dataGet = await fetch(`https://gymspark.onrender.com/activityget/${id}`);
     dataGet = await dataGet.json();
     seteditActivityState(dataGet);
     setIdget(id);
@@ -44,7 +44,7 @@ const ActivityRecord = () => {
   console.log(editActivityState, "data Get");
   const updateActivityBtn = async () => {
     let idtoUpdate = idget;
-    await fetch(`http://127.0.0.1:4000/activityedit/${idtoUpdate}`, {
+    await fetch(https://gymspark.onrender.com/activityedit/${idtoUpdate}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(editActivityState),
@@ -146,10 +146,6 @@ const ActivityRecord = () => {
           </form>
         </div>
       )}
-
-
-     
-
     </>
   );
 };
