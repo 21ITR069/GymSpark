@@ -25,7 +25,7 @@ const Register = () => {
       ) {
         alert("please enter data in all fields");
       } else {
-        let record = await fetch("http://127.0.0.1:4000/register", {
+        let record = await fetch("https://gymspark.onrender.com/register", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(singupInputs),
