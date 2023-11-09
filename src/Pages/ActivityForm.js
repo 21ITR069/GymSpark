@@ -30,7 +30,7 @@ const ActivityForm = () => {
         alert("please Enter Data in All fields!")
     }
     else{
-      await fetch("http://127.0.0.1:4000/activitypost", {
+      await fetch("https://gymspark.onrender.com/activitypost", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(addActivity),
@@ -103,9 +103,6 @@ const ActivityForm = () => {
       </div>
     </>
   );
-
-
-
 };
 
 export default ActivityForm;
