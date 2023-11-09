@@ -1,0 +1,104 @@
+/* Calcu.css */
+
+/* Container styles */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Title styles */
+h2.center {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+/* Button styles */
+button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-outline {
+  background-color: transparent;
+  color: #007BFF;
+  border: 1px solid #007BFF;
+}
+
+button.btn-outline:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/* Result styles */
+.center h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #333;
+}
+
+p {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Image styles */
+.img-container {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
